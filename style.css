@@ -126,9 +126,10 @@ html {
 }
 
 .line {
-    width: 12px;
-    height: 92px;
+    /* width: 12px;
+    height: 92px; */
     flex-shrink: 0;
+    max-width: 100%;
 }
 
 /* .top_content_R .top_content_L {
@@ -406,6 +407,20 @@ html {
         padding: 0 16px;
     }
 
+    .name {
+        font-size: 44px;
+    }
 
+    .soname {
+        font-size: 24px;
+    }
+
+    .soname2 {
+        font-size: 24px;
+    }
+
+    .top_content_R {
+        padding-left: 39px;
+    }
 
 }

@@ -392,13 +392,13 @@ html {
 }
 /* ----------------------------- */
 .icons {
-    flex-shrink: 0;
     background-color: #222224;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    padding: 104px 0;
 }
 
 .icon {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .head {
   min-height: 148px;
   background: #F8F3F4;
@@ -133,29 +134,40 @@
   gap: 23px;
 }
 .description_choose_sort {
-  color: #6F6E6E;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   position: relative;
 }
 .description_choose_name {
   display: flex;
   align-items: center;
   gap: 9px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .description_choose_size {
   position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 6px;
+  width: 100px;
+  padding: 7px 9px 11px;
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 1;
+  top: 22px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .description_choose_size_label {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 .description_add {
   border: 1px solid #F16D7F;
@@ -176,6 +188,238 @@
   font-weight: 400;
   line-height: normal;
   padding-right: 33px;
+}
+
+summary {
+  list-style: none;
+}
+
+.filter-sort {
+  position: relative;
+  display: flex;
+  gap: 385px;
+  padding-top: 51px;
+  padding-bottom: 64px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #6F6E6E;
+}
+
+.filter__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 11px;
+  padding: 24px 16px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 13px 16px 16px;
+  z-index: 1;
+  box-sizing: border-box;
+  top: 39px;
+}
+.filter__name {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.filter__name-title {
+  color: #222224;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.filter__category {
+  margin-top: 16px;
+}
+.filter__category-summary {
+  color: #EF5B70;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 11px 11px 11px;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #F16D7F;
+}
+.filter__category[open] .filter__category-summary {
+  color: #F16D7F;
+}
+.filter__link {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__link:hover {
+  color: #F16D7F;
+}
+
+.filter[open] {
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+}
+
+.filter[open] .filter__name-title {
+  color: #F16D7F;
+}
+
+.filter[open] .filter__img path {
+  fill: #F16D7F;
+}
+
+.sort {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.sort__content {
+  width: 150px;
+  position: absolute;
+  z-index: 5;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.roll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roll__R_L {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 263px;
+  height: 43px;
+  border: 1px solid #EBEBEB;
+  margin: 48px 0 96px;
+}
+
+.registration_form {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  gap: 128px;
+}
+.registration_form__L {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.registration_form__L-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(111, 110, 110);
+}
+.registration_form__L-form {
+  box-sizing: border-box;
+  padding: 12px 17px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(164, 164, 164);
+  -o-border-image: initial;
+     border-image: initial;
+  transition: all 0.3s ease 0s;
+}
+.registration_form__L_gender {
+  display: flex;
+  gap: 10px;
+  padding: 11px 0px 23px;
+}
+.registration_form__L_gender-button {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(111, 110, 110);
+  padding-right: 10px;
+}
+.registration_form__L_gender .gender-other {
+  visibility: hidden;
+}
+.registration_form__L-rule {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(177, 177, 177);
+}
+.registration_form__L_submit {
+  width: 167px;
+  box-sizing: border-box;
+  margin-top: 39px;
+  background-color: rgb(241, 109, 127);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 16px 20px;
+  border-width: initial;
+  border-style: initial;
+  border-color: transparent;
+  -o-border-image: initial;
+     border-image: initial;
+  transition: all 0.3s ease 0s;
+}
+.registration_form__R {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration_form__R-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  margin-bottom: 6px;
+}
+.registration_form__R-rule {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+.registration_form__R-text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+}
+.registration_form__R-text::before {
+  content: "✔";
+  padding-right: 22px;
 }
 
 /* ----------------------------------------------
@@ -310,8 +554,8 @@ html {
     max-width: 100%;
 } */
 .center {
-  padding-left: calc(50vw - 570px);
-  padding-right: calc(50vw - 570px);
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
   /* padding: 0 1%; */
 }
 
@@ -345,9 +589,6 @@ html {
   height: 38px;
   margin-top: 18px;
   margin-bottom: 19px;
-}
-.top_logo:hover {
-  background: url(<path-to-image>), lightgray 0px 0px/100% 100% no-repeat;
 }
 .top_search {
   display: flex;

@@ -130,27 +130,37 @@
         @include flexCentr;
         gap: 23px;
         &_sort {
-            color: #6F6E6E;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
             position: relative;
         }
         &_name {
             display: flex;
             align-items: center;
             gap: 9px;
+            color: #6F6E6E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
         &_size {
             position: absolute;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 6px;
+            width: 100px;
+            padding: 7px 9px 11px;
+            background: #FFFFFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             z-index: 1;
+            top: 22px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
             &_label {
                 @include flexCentr;
-                
+                gap: 15px;
             }
         }
     }

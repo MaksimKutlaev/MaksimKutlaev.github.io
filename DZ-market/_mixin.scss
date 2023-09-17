@@ -9,3 +9,11 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@mixin ruleText {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: rgb(0, 0, 0);
+}

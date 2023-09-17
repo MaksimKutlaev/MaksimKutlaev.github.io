@@ -1,0 +1,93 @@
+@import 'vars';
+@import 'mixin';
+
+.registration_form {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    gap: 128px;
+    &__L {
+        @include flexColumn;
+        gap: 20px;
+        &-title {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: rgb(111, 110, 110);
+        }
+        &-form {
+            box-sizing: border-box;
+            padding: 12px 17px 15px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(164, 164, 164);
+            border-image: initial;
+            transition: all 0.3s ease 0s;
+        }
+        &_gender {
+            display: flex;
+            gap: 10px;
+            padding: 11px 0px 23px;
+            &-button {
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: rgb(111, 110, 110);
+                padding-right: 10px;
+            }
+        }
+        &_gender .gender-other {
+            visibility: hidden;
+        }
+        &-rule {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: rgb(177, 177, 177);
+        }
+        &_submit {
+            width: 167px;
+            box-sizing: border-box;
+            margin-top: 39px;
+            background-color: rgb(241, 109, 127);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 16px 20px;
+            border-width: initial;
+            border-style: initial;
+            border-color: transparent;
+            border-image: initial;
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    &__R {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-title {
+            @include ruleText;
+            margin-bottom: 6px;
+        }
+        &-rule {
+            @include ruleText;
+            margin-bottom: 5px;
+        }
+        &-text {
+            @include ruleText;
+        }
+        &-text::before {
+            content: "✔";
+            padding-right: 22px;
+        }
+    }
+
+}

@@ -1,0 +1,216 @@
+@import 'vars';
+@import 'mixin';
+
+p {
+    font-style: normal;
+    line-height: normal;
+}
+
+.basket {
+    padding: 96px 0px 128px 0px;
+}
+
+.basket-box {
+    display: flex;
+    justify-content: space-between;
+    &__L {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &-item {
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.21) 6px 4px 35px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            transition: all 0.3s ease 0s;
+            width: 652px;
+        }
+        &-item:hover {
+            transform: scale(1.03);
+        }
+        &-img {
+            height: 100%;
+            width: 262px;
+        }
+        &_info {
+            width: 390px;
+            padding: 22px 0px 0px 0px;
+            @include ruleText;
+            color: #575757;
+            &-title {
+                width: 200px;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: $colorTextDark; 
+            }
+            &-price span {
+                color: $colorSite;
+            }
+            &-price {
+                padding-bottom: 6px;
+            }
+            &-size {
+                padding-bottom: 6px;
+            }
+            &-quantity input {
+                width: 44px;
+                box-sizing: border-box;
+                height: 24.949px;
+                text-align: center;
+                margin-left: 24px;
+                @include textPrice;
+                color: rgb(101, 101, 101);
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(234, 234, 234);
+                border-image: initial;
+            }
+            &-close {
+                position: absolute;
+                top: 28px;
+                right: 22px;
+                opacity: 0.8;
+                cursor: pointer;
+                transition: opacity 0.5s ease 0s;
+            }
+            &-close:hover path {
+                fill: $colorSite;
+            }
+        }
+        &_buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+            &-push {
+                width: 235px;
+                height: 50px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: $colorTextDark;
+                background-color: white;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(164, 164, 164);
+                border-image: initial;
+                transition: all 0.3s ease 0s;
+            }
+            &-push:hover {
+                color: white;
+                background-color: $colorSite;
+                
+            }
+        }
+
+    }
+    &__R {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 21px;
+        &_info {
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+            &-title {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: $colorTextDark;
+            }
+            &-input {
+                width: 360px;
+                height: 45px;
+                box-sizing: border-box;
+                @include textPrice;
+                color: rgb(111, 110, 110);
+                padding: 13px 17px 16px;
+            }
+            &-button {
+                width: 102px;
+                height: 35px;
+                background-color: white;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: rgb(111, 110, 110);
+                white-space-collapse: collapse;
+                text-wrap: nowrap;
+                box-sizing: border-box;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(164, 164, 164);
+                border-image: initial;
+                padding: 11px 15px;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        &_check {
+            height: 214px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(245, 243, 243);
+            margin-top: 47px;
+            padding: 39px 44px 0px;
+            &-pricebox {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            &-sub {
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: rgb(111, 110, 110);
+                margin-bottom: 12px;
+            }
+            &-subprice {
+                margin-left: 10px;
+            }
+            &-grand {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: rgb(111, 110, 110);
+            }
+            &-grandprice {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding-left: 10px;
+                color: rgb(241, 109, 127);
+            }
+            &-line {
+                width: 275px;
+                color: rgb(226, 226, 226);
+                margin: 21px 0px 17px;
+            }
+            &-button{
+            box-sizing: border-box;
+            background-color: $colorSite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: white;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            padding: 15px 42px;
+            transition: all 0.3s ease 0s;
+            }
+        }
+        
+    }
+}
+

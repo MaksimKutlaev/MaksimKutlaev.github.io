@@ -1,0 +1,110 @@
+@media (max-width: 1024px) {
+
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+
+    .header {
+        min-height: 74px;
+    }
+
+    .description_choose {
+        gap: 28px;
+    }
+
+    .filter-sort {
+        padding: 24px 0 0 0;
+        justify-content: space-between;
+    }
+
+    .filter {
+        padding: 0;
+        top: 24px;
+    }
+
+    .top_image {
+        width: 368px;
+    }
+
+    .content {
+        gap: 19px;
+        margin: 64px 0 110px 0;
+    }
+
+    .board {
+        padding: 0 16px;
+    }
+
+    .name {
+        font-size: 44px;
+    }
+
+    .soname {
+        font-size: 24px;
+    }
+
+    .soname2 {
+        font-size: 24px;
+    }
+
+    .top_content_R {
+        padding-left: 39px;
+    }
+
+    .box_section {
+        grid-template-columns: repeat(2, 2fr);
+        gap:16px;
+        margin: 72px 0 32px 0;
+    }
+
+    .box_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_item_text {
+        gap: 13px;
+        padding: 24px 29px 20px 16px;
+    }
+
+    .browse {
+        margin-bottom: 70px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $colorTextDark;
+        color: #FBFBFB;
+        padding: 48px 0 64px 0;
+        gap: 30px;
+    }
+
+    .subscribe {
+        background-image: url(image/back_tab.png);
+        height: 693px;
+    }
+
+    .subscribe_blocks {
+        @include flexColumn;
+        gap:48px;
+    }
+
+    .subscribe_L {
+        padding-top: 54px;
+    }
+    
+    .subscribe_R {
+        padding-top: 48px;
+    }
+
+    .box_catalog {
+        display: none;
+    }
+
+
+
+}

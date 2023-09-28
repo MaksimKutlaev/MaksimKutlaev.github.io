@@ -15,8 +15,8 @@ p {
     justify-content: space-between;
     &__L {
         display: flex;
-        flex-direction: column;
         gap: 40px;
+        flex-direction: column;
         &-item {
             position: relative;
             box-shadow: rgba(0, 0, 0, 0.21) 6px 4px 35px 0px;
@@ -191,23 +191,23 @@ p {
             }
             &-line {
                 width: 275px;
-                color: rgb(226, 226, 226);
+                color: #E2E2E2;
                 margin: 21px 0px 17px;
             }
             &-button{
-            box-sizing: border-box;
-            background-color: $colorSite;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            color: white;
-            border-width: initial;
-            border-style: none;
-            border-color: initial;
-            border-image: initial;
-            padding: 15px 42px;
-            transition: all 0.3s ease 0s;
+                box-sizing: border-box;
+                border: none;
+                background-color: #F16D7F;
+                padding: 15px 42px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: white;
+                transition: 0.3s;
+            }
+            &-button:hover {
+                background-color: grey;
             }
         }
         
